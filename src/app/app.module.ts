@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgmCoreModule } from '@agm/core';
 import { ReactiveFormsModule } from "@angular/forms";
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ReactiveFormsModule } from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({ apiKey: '' }),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
